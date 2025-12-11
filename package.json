@@ -2,7 +2,7 @@
   "name": "better-chalk-theme",
   "displayName": "Better Chalk Theme",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.106.1"
   },
