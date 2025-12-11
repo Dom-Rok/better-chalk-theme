@@ -1,0 +1,28 @@
+name : AutoBuild vsix
+
+on :
+  push: 
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name : Checkout repo
+        uses: actions/checkout@v4
+
+      - name : setup node
+        uses: actions/setup-node@v4 
+        with: 
+          node-version : 20
+
+      - name: Package Extension
+        run: |
+          npm install -g @vscode/vsce
+          vsce package
+
+      - name: Upload vsix artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscode-extension
+          path: "*.vsix"

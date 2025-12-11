@@ -17,5 +17,9 @@
         "path": "./themes/Better Chalk-color-theme.json"
       }
     ]
-  }
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Dom-Rok/better-chalk-theme"
+}
 }
