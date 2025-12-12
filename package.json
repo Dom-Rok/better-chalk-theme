@@ -6,6 +6,7 @@
   "engines": {
     "vscode": "^1.102.35058"
   },
+  "license":"MIT",
   "categories": [
     "Themes"
   ],
